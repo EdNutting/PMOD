@@ -3,7 +3,7 @@
 // Engineer: Ed Nutting 
 // 
 // Create Date: 30.05.2019 15:12:07
-// Design Name: Top-level PMOD demo
+// Design Name: PMOD demo
 // Module Name: top
 // Project Name: PMOD
 // Target Devices: Zedboard (Zynq 7020)
@@ -31,17 +31,25 @@ module top(
     output LD6, // LED 6
     output LD7, // LED 7
 
-    // PMOD BT2 attached to PMOD Port B (JB1-JB12)
-    input  JB1, // RTS
-    output JB2, // RXD
-    input  JB3, // TXD
-    output JB4, // CTS
-    // JB5/6 - Power/ground
-    input  JB7, // Connection status
-    output JB8, // Reset
-    input  JB9, // Not connected
-    input  JB10 // Not connected
-    // JB11/12 - Power/ground
+    // PMOD Port B (JB1-JB12) (PMOD BT2)
+    input  JB1,  // RTS
+    output JB2,  // RXD
+    input  JB3,  // TXD
+    output JB4,  // CTS
+    input  JB7,  // Connection status
+    output JB8,  // Reset
+    input  JB9,  // Not connected
+    input  JB10, // Not connected
+    
+    // PMOD Port C (JC1-JC12) (PMOD Step)
+    output JC1_N, // SIG1 - Secondary motor
+    output JC1_P, // SIG2 - Secondary motor
+    output JC2_N, // SIG3 - Secondary motor
+    output JC2_P, // SIG4 - Secondary motor
+    output JC3_N, // SIG5 - Primary motor
+    output JC3_P, // SIG6 - Primary motor
+    output JC4_N, // SIG7 - Primary motor
+    output JC4_P  // SIG8 - Primary motor
     );
     
     // See constraints file - global clock should be from Y9 package pin @ 100MHz
@@ -80,6 +88,8 @@ module top(
         BTNU_pressed_prev <= BTNU_pressed;
     end
     */
+    
+    // PMOD BT2 - Bluetooth connection
     
     // BT2 input signals
     assign BT2_RTS = JB1;
@@ -130,5 +140,69 @@ module top(
     assign BT2_char_in = BT2_char_out;
     assign BT2_send = BT2_receive && !BT2_sent;
     assign BT2_received = BT2_sent;
+    
+    
+    // PMOD Step - Stepper motor drivers
+    // Commands F, B, L, R, and S (stop) accepted from Bluetooth
+    //  Cause 1 full revolution of motors then stop.
+    //  Commands can be interrupted by subsequent ones.
+
+    wire step_dirL, step_dirR;
+    wire step_enbL, step_enbR;
+    wire step_steppedL, step_steppedR;
+
+    StepMotorInterface #(
+        .SIDE (1'b1)
+        ) stepMotorIntfL (
+        .CLK        (CLK),
+        .RST_N      (RST_N),
+        .char_vld   (BT2_receive),
+        .char       (BT2_char_out),
+        .enb        (step_enbL),
+        .dir        (step_dirL),
+        .stepped    (step_steppedL)
+        );
+
+    StepMotorInterface #(
+        .SIDE (1'b0)
+        ) stepMotorIntfR (
+        .CLK        (CLK),
+        .RST_N      (RST_N),
+        .char_vld   (BT2_receive),
+        .char       (BT2_char_out),
+        .enb        (step_enbR),
+        .dir        (step_dirR),
+        .stepped    (step_steppedR)
+        );
+
+    PMOD_Step stepLeft (
+        .CLK    (CLK),
+        .RST_N  (RST_N),
+
+        .DIR    (step_dirL),
+        .ENB    (step_enbL),
+        
+        .stepped (step_steppedL),
+
+        .SIG1   (JC3_N),
+        .SIG2   (JC3_P),
+        .SIG3   (JC4_N),
+        .SIG4   (JC4_P)
+        );
+
+    PMOD_Step stepRight (
+        .CLK    (CLK),
+        .RST_N  (RST_N),
+
+        .DIR    (step_dirR),
+        .ENB    (step_enbR),
+        
+        .stepped (step_steppedR),
+
+        .SIG1   (JC1_N),
+        .SIG2   (JC1_P),
+        .SIG3   (JC2_N),
+        .SIG4   (JC2_P)
+        );
 
 endmodule

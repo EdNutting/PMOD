@@ -3,8 +3,8 @@
 // Engineer: Ed Nutting 
 // 
 // Create Date: 30.05.2019 15:12:07
-// Design Name: Top-level PMOD demo
-// Module Name: top
+// Design Name: PMOD demo
+// Module Name: PMOD_BT2
 // Project Name: PMOD
 // Target Devices: Zedboard (Zynq 7020)
 // Tool Versions: Vivado 2016.1
