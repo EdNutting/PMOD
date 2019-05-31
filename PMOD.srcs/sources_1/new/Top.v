@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Engineer: Ec Nutting 
+// Engineer: Ed Nutting 
 // 
 // Create Date: 30.05.2019 15:12:07
 // Design Name: Top-level PMOD demo
