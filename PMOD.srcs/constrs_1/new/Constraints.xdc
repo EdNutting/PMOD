@@ -96,6 +96,12 @@ set_property PACKAGE_PIN AB11 [get_ports {JA7}];  # "JA7"
 set_property PACKAGE_PIN AB10 [get_ports {JA8}];  # "JA8"
 set_property PACKAGE_PIN AB9  [get_ports {JA9}];  # "JA9"
 
+# For PMOD RTCC
+
+set_property PULLUP TRUE [get_ports {JA3}];
+set_property PULLUP TRUE [get_ports {JA4}];
+set_property PULLUP TRUE [get_ports {JA9}];
+set_property PULLUP TRUE [get_ports {JA10}];
 
 # ----------------------------------------------------------------------------
 # JB Pmod - Bank 13

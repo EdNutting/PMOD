@@ -30,6 +30,14 @@ module top(
     output LD5, // LED 5
     output LD6, // LED 6
     output LD7, // LED 7
+    
+    // PMOD Port A (JA1-JA12) (PMOD RTCC)
+    
+    input JA2,   // Return input of MFI pin
+    inout JA3,   // SCL (1)
+    inout JA4,   // SDA (1)
+    inout JA9,   // SCL (2)
+    inout JA10,  // SDA (2)
 
     // PMOD Port B (JB1-JB12) (PMOD BT2)
     input  JB1,  // RTS
@@ -64,7 +72,7 @@ module top(
     //                assign BT2_RST_N = RST_N;
     //            And changing BT2_RST_N to BT2_RST_N_Unused in bt2 declaration.
 
-    /*DeBounce BTND_debounce (
+    DeBounce BTND_debounce (
         .clk(CLK),
         .n_reset(RST_N),
         .button_in(BTND),
@@ -87,7 +95,6 @@ module top(
     always @(posedge CLK) begin
         BTNU_pressed_prev <= BTNU_pressed;
     end
-    */
     
     // PMOD BT2 - Bluetooth connection
     
@@ -141,6 +148,10 @@ module top(
     assign BT2_send = BT2_receive && !BT2_sent;
     assign BT2_received = BT2_sent;
     
+    reg BT2_receive_prev;
+    always @(posedge CLK) begin
+        BT2_receive_prev <= BT2_receive;
+    end
     
     // PMOD Step - Stepper motor drivers
     // Commands F, B, L, R, and S (stop) accepted from Bluetooth
@@ -203,6 +214,41 @@ module top(
         .SIG2   (JC1_P),
         .SIG3   (JC2_N),
         .SIG4   (JC2_P)
+        );
+
+
+    // PMOD RTCC - PMOD Real-time Clock/Calendar
+    
+    reg rtcc_mfiState;
+    wire triggerMFIToggle =  (BT2_receive && (BT2_receive != BT2_receive_prev) && BT2_char_out == "T")
+                          || (BTNU_pressed && !BTNU_pressed_prev);
+    
+    assign LD6 = rtcc_mfiState;
+    assign LD7 = JA2;
+        
+    always @(posedge CLK) begin
+        if (!RST_N) begin
+            rtcc_mfiState <= 0;
+        end
+        else begin
+            if (triggerMFIToggle) begin
+                rtcc_mfiState <= !rtcc_mfiState;
+            end
+        end
+    end
+    
+    PMOD_RTCC rtcc (
+        .CLK    (CLK),
+        .RST_N  (RST_N),
+        
+        .mfiState (rtcc_mfiState),
+        .setmfi_busy (LD4),
+        .clearmfi_busy (LD5),
+        
+        .SCL_1    (JA3),
+        .SDA_1    (JA4),
+        .SCL_2    (JA9),
+        .SDA_2    (JA10)
         );
 
 endmodule

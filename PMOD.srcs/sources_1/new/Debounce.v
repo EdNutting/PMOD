@@ -28,7 +28,7 @@
 module  DeBounce 
 	(
 	input 			clk, n_reset, button_in,				// inputs
-	output reg 	DB_out													// output
+	output reg 	DB_out										// output
 	);
 //// ---------------- internal constants --------------
 	parameter N = 23 ;

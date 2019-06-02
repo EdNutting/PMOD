@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="150800000002fs"></ZoomEndTime>
+      <Cursor1Time time="25609795000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="228" />
+   <wvobject fp_name="/top_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/RST_N" type="logic">
+      <obj_property name="ElementShortName">RST_N</obj_property>
+      <obj_property name="ObjectShortName">RST_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/BTNC" type="logic">
+      <obj_property name="ElementShortName">BTNC</obj_property>
+      <obj_property name="ObjectShortName">BTNC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/BTND" type="logic">
+      <obj_property name="ElementShortName">BTND</obj_property>
+      <obj_property name="ObjectShortName">BTND</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/BTNU" type="logic">
+      <obj_property name="ElementShortName">BTNU</obj_property>
+      <obj_property name="ObjectShortName">BTNU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD0" type="logic">
+      <obj_property name="ElementShortName">LD0</obj_property>
+      <obj_property name="ObjectShortName">LD0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD1" type="logic">
+      <obj_property name="ElementShortName">LD1</obj_property>
+      <obj_property name="ObjectShortName">LD1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD2" type="logic">
+      <obj_property name="ElementShortName">LD2</obj_property>
+      <obj_property name="ObjectShortName">LD2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD3" type="logic">
+      <obj_property name="ElementShortName">LD3</obj_property>
+      <obj_property name="ObjectShortName">LD3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD4" type="logic">
+      <obj_property name="ElementShortName">LD4</obj_property>
+      <obj_property name="ObjectShortName">LD4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD5" type="logic">
+      <obj_property name="ElementShortName">LD5</obj_property>
+      <obj_property name="ObjectShortName">LD5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD6" type="logic">
+      <obj_property name="ElementShortName">LD6</obj_property>
+      <obj_property name="ObjectShortName">LD6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/LD7" type="logic">
+      <obj_property name="ElementShortName">LD7</obj_property>
+      <obj_property name="ObjectShortName">LD7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JA2" type="logic">
+      <obj_property name="ElementShortName">JA2</obj_property>
+      <obj_property name="ObjectShortName">JA2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JA3" type="logic">
+      <obj_property name="ElementShortName">JA3</obj_property>
+      <obj_property name="ObjectShortName">JA3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JA4" type="logic">
+      <obj_property name="ElementShortName">JA4</obj_property>
+      <obj_property name="ObjectShortName">JA4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JA9" type="logic">
+      <obj_property name="ElementShortName">JA9</obj_property>
+      <obj_property name="ObjectShortName">JA9</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JA10" type="logic">
+      <obj_property name="ElementShortName">JA10</obj_property>
+      <obj_property name="ObjectShortName">JA10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB1" type="logic">
+      <obj_property name="ElementShortName">JB1</obj_property>
+      <obj_property name="ObjectShortName">JB1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB2" type="logic">
+      <obj_property name="ElementShortName">JB2</obj_property>
+      <obj_property name="ObjectShortName">JB2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB3" type="logic">
+      <obj_property name="ElementShortName">JB3</obj_property>
+      <obj_property name="ObjectShortName">JB3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB4" type="logic">
+      <obj_property name="ElementShortName">JB4</obj_property>
+      <obj_property name="ObjectShortName">JB4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB7" type="logic">
+      <obj_property name="ElementShortName">JB7</obj_property>
+      <obj_property name="ObjectShortName">JB7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB8" type="logic">
+      <obj_property name="ElementShortName">JB8</obj_property>
+      <obj_property name="ObjectShortName">JB8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB9" type="logic">
+      <obj_property name="ElementShortName">JB9</obj_property>
+      <obj_property name="ObjectShortName">JB9</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JB10" type="logic">
+      <obj_property name="ElementShortName">JB10</obj_property>
+      <obj_property name="ObjectShortName">JB10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC1_N" type="logic">
+      <obj_property name="ElementShortName">JC1_N</obj_property>
+      <obj_property name="ObjectShortName">JC1_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC1_P" type="logic">
+      <obj_property name="ElementShortName">JC1_P</obj_property>
+      <obj_property name="ObjectShortName">JC1_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC2_N" type="logic">
+      <obj_property name="ElementShortName">JC2_N</obj_property>
+      <obj_property name="ObjectShortName">JC2_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC2_P" type="logic">
+      <obj_property name="ElementShortName">JC2_P</obj_property>
+      <obj_property name="ObjectShortName">JC2_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC3_N" type="logic">
+      <obj_property name="ElementShortName">JC3_N</obj_property>
+      <obj_property name="ObjectShortName">JC3_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC3_P" type="logic">
+      <obj_property name="ElementShortName">JC3_P</obj_property>
+      <obj_property name="ObjectShortName">JC3_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC4_N" type="logic">
+      <obj_property name="ElementShortName">JC4_N</obj_property>
+      <obj_property name="ObjectShortName">JC4_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/JC4_P" type="logic">
+      <obj_property name="ElementShortName">JC4_P</obj_property>
+      <obj_property name="ObjectShortName">JC4_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_scl_i" type="logic">
+      <obj_property name="ElementShortName">i2c_scl_i</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_scl_o" type="logic">
+      <obj_property name="ElementShortName">i2c_scl_o</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_scl_t" type="logic">
+      <obj_property name="ElementShortName">i2c_scl_t</obj_property>
+      <obj_property name="ObjectShortName">i2c_scl_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_sda_i" type="logic">
+      <obj_property name="ElementShortName">i2c_sda_i</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_sda_o" type="logic">
+      <obj_property name="ElementShortName">i2c_sda_o</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_sda_t" type="logic">
+      <obj_property name="ElementShortName">i2c_sda_t</obj_property>
+      <obj_property name="ObjectShortName">i2c_sda_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_busy" type="logic">
+      <obj_property name="ElementShortName">i2c_busy</obj_property>
+      <obj_property name="ObjectShortName">i2c_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_bus_control" type="logic">
+      <obj_property name="ElementShortName">i2c_bus_control</obj_property>
+      <obj_property name="ObjectShortName">i2c_bus_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_bus_active" type="logic">
+      <obj_property name="ElementShortName">i2c_bus_active</obj_property>
+      <obj_property name="ObjectShortName">i2c_bus_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/i2c_missed_ack" type="logic">
+      <obj_property name="ElementShortName">i2c_missed_ack</obj_property>
+      <obj_property name="ObjectShortName">i2c_missed_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/setmfi_cmd_start" type="logic">
+      <obj_property name="ElementShortName">setmfi_cmd_start</obj_property>
+      <obj_property name="ObjectShortName">setmfi_cmd_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/clearmfi_cmd_start" type="logic">
+      <obj_property name="ElementShortName">clearmfi_cmd_start</obj_property>
+      <obj_property name="ObjectShortName">clearmfi_cmd_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/triggerMFIToggle" type="logic">
+      <obj_property name="ElementShortName">triggerMFIToggle</obj_property>
+      <obj_property name="ObjectShortName">triggerMFIToggle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/BT2_receive" type="logic">
+      <obj_property name="ElementShortName">BT2_receive</obj_property>
+      <obj_property name="ObjectShortName">BT2_receive</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/BT2_receive_prev" type="logic">
+      <obj_property name="ElementShortName">BT2_receive_prev</obj_property>
+      <obj_property name="ObjectShortName">BT2_receive_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/BT2_char_out" type="array">
+      <obj_property name="ElementShortName">BT2_char_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">BT2_char_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/BTNU" type="logic">
+      <obj_property name="ElementShortName">BTNU</obj_property>
+      <obj_property name="ObjectShortName">BTNU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/BTNU_pressed_prev" type="logic">
+      <obj_property name="ElementShortName">BTNU_pressed_prev</obj_property>
+      <obj_property name="ObjectShortName">BTNU_pressed_prev</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider76">
+      <obj_property name="label">mfi_set</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_address" type="array">
+      <obj_property name="ElementShortName">cmd_address[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_address[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_start" type="logic">
+      <obj_property name="ElementShortName">cmd_start</obj_property>
+      <obj_property name="ObjectShortName">cmd_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_read" type="logic">
+      <obj_property name="ElementShortName">cmd_read</obj_property>
+      <obj_property name="ObjectShortName">cmd_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_write" type="logic">
+      <obj_property name="ElementShortName">cmd_write</obj_property>
+      <obj_property name="ObjectShortName">cmd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_write_multiple" type="logic">
+      <obj_property name="ElementShortName">cmd_write_multiple</obj_property>
+      <obj_property name="ObjectShortName">cmd_write_multiple</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_stop" type="logic">
+      <obj_property name="ElementShortName">cmd_stop</obj_property>
+      <obj_property name="ObjectShortName">cmd_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_valid" type="logic">
+      <obj_property name="ElementShortName">cmd_valid</obj_property>
+      <obj_property name="ObjectShortName">cmd_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_ready" type="logic">
+      <obj_property name="ElementShortName">cmd_ready</obj_property>
+      <obj_property name="ObjectShortName">cmd_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_valid" type="logic">
+      <obj_property name="ElementShortName">data_out_valid</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_ready" type="logic">
+      <obj_property name="ElementShortName">data_out_ready</obj_property>
+      <obj_property name="ObjectShortName">data_out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_last" type="logic">
+      <obj_property name="ElementShortName">data_out_last</obj_property>
+      <obj_property name="ObjectShortName">data_out_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/init_data" type="array">
+      <obj_property name="ElementShortName">init_data[3:0][8:0]</obj_property>
+      <obj_property name="ObjectShortName">init_data[3:0][8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/state_reg" type="array">
+      <obj_property name="ElementShortName">state_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/state_next" type="array">
+      <obj_property name="ElementShortName">state_next[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/init_data_reg" type="array">
+      <obj_property name="ElementShortName">init_data_reg[8:0]</obj_property>
+      <obj_property name="ObjectShortName">init_data_reg[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/address_reg" type="array">
+      <obj_property name="ElementShortName">address_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">address_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/address_next" type="array">
+      <obj_property name="ElementShortName">address_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">address_next[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/address_ptr_reg" type="array">
+      <obj_property name="ElementShortName">address_ptr_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">address_ptr_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/address_ptr_next" type="array">
+      <obj_property name="ElementShortName">address_ptr_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">address_ptr_next[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_ptr_reg" type="array">
+      <obj_property name="ElementShortName">data_ptr_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_ptr_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_ptr_next" type="array">
+      <obj_property name="ElementShortName">data_ptr_next[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_ptr_next[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cur_address_reg" type="array">
+      <obj_property name="ElementShortName">cur_address_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_address_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cur_address_next" type="array">
+      <obj_property name="ElementShortName">cur_address_next[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_address_next[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_address_reg" type="array">
+      <obj_property name="ElementShortName">cmd_address_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_address_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_address_next" type="array">
+      <obj_property name="ElementShortName">cmd_address_next[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_address_next[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_start_reg" type="logic">
+      <obj_property name="ElementShortName">cmd_start_reg</obj_property>
+      <obj_property name="ObjectShortName">cmd_start_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_start_next" type="logic">
+      <obj_property name="ElementShortName">cmd_start_next</obj_property>
+      <obj_property name="ObjectShortName">cmd_start_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_write_reg" type="logic">
+      <obj_property name="ElementShortName">cmd_write_reg</obj_property>
+      <obj_property name="ObjectShortName">cmd_write_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_write_next" type="logic">
+      <obj_property name="ElementShortName">cmd_write_next</obj_property>
+      <obj_property name="ObjectShortName">cmd_write_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_stop_reg" type="logic">
+      <obj_property name="ElementShortName">cmd_stop_reg</obj_property>
+      <obj_property name="ObjectShortName">cmd_stop_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_stop_next" type="logic">
+      <obj_property name="ElementShortName">cmd_stop_next</obj_property>
+      <obj_property name="ObjectShortName">cmd_stop_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_valid_reg" type="logic">
+      <obj_property name="ElementShortName">cmd_valid_reg</obj_property>
+      <obj_property name="ObjectShortName">cmd_valid_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/cmd_valid_next" type="logic">
+      <obj_property name="ElementShortName">cmd_valid_next</obj_property>
+      <obj_property name="ObjectShortName">cmd_valid_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_reg" type="array">
+      <obj_property name="ElementShortName">data_out_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_next" type="array">
+      <obj_property name="ElementShortName">data_out_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_valid_reg" type="logic">
+      <obj_property name="ElementShortName">data_out_valid_reg</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/data_out_valid_next" type="logic">
+      <obj_property name="ElementShortName">data_out_valid_next</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/start_flag_reg" type="logic">
+      <obj_property name="ElementShortName">start_flag_reg</obj_property>
+      <obj_property name="ObjectShortName">start_flag_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/start_flag_next" type="logic">
+      <obj_property name="ElementShortName">start_flag_next</obj_property>
+      <obj_property name="ObjectShortName">start_flag_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/busy_reg" type="logic">
+      <obj_property name="ElementShortName">busy_reg</obj_property>
+      <obj_property name="ObjectShortName">busy_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/EEPROM_ADDR" type="array">
+      <obj_property name="ElementShortName">EEPROM_ADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">EEPROM_ADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/RTCC_ADDR" type="array">
+      <obj_property name="ElementShortName">RTCC_ADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">RTCC_ADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/INIT_DATA_LEN" type="array">
+      <obj_property name="ElementShortName">INIT_DATA_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INIT_DATA_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/STATE_IDLE" type="array">
+      <obj_property name="ElementShortName">STATE_IDLE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_IDLE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/STATE_RUN" type="array">
+      <obj_property name="ElementShortName">STATE_RUN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_RUN[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/STATE_TABLE_1" type="array">
+      <obj_property name="ElementShortName">STATE_TABLE_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_TABLE_1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/STATE_TABLE_2" type="array">
+      <obj_property name="ElementShortName">STATE_TABLE_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_TABLE_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/STATE_TABLE_3" type="array">
+      <obj_property name="ElementShortName">STATE_TABLE_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_TABLE_3[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/mfi_set/AW" type="array">
+      <obj_property name="ElementShortName">AW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider440">
+      <obj_property name="label">i2c_master</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_address" type="array">
+      <obj_property name="ElementShortName">cmd_address[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_address[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_start" type="logic">
+      <obj_property name="ElementShortName">cmd_start</obj_property>
+      <obj_property name="ObjectShortName">cmd_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_read" type="logic">
+      <obj_property name="ElementShortName">cmd_read</obj_property>
+      <obj_property name="ObjectShortName">cmd_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_write" type="logic">
+      <obj_property name="ElementShortName">cmd_write</obj_property>
+      <obj_property name="ObjectShortName">cmd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_write_multiple" type="logic">
+      <obj_property name="ElementShortName">cmd_write_multiple</obj_property>
+      <obj_property name="ObjectShortName">cmd_write_multiple</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_stop" type="logic">
+      <obj_property name="ElementShortName">cmd_stop</obj_property>
+      <obj_property name="ObjectShortName">cmd_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_valid" type="logic">
+      <obj_property name="ElementShortName">cmd_valid</obj_property>
+      <obj_property name="ObjectShortName">cmd_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_ready" type="logic">
+      <obj_property name="ElementShortName">cmd_ready</obj_property>
+      <obj_property name="ObjectShortName">cmd_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_in_valid" type="logic">
+      <obj_property name="ElementShortName">data_in_valid</obj_property>
+      <obj_property name="ObjectShortName">data_in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_in_ready" type="logic">
+      <obj_property name="ElementShortName">data_in_ready</obj_property>
+      <obj_property name="ObjectShortName">data_in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_in_last" type="logic">
+      <obj_property name="ElementShortName">data_in_last</obj_property>
+      <obj_property name="ObjectShortName">data_in_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_valid" type="logic">
+      <obj_property name="ElementShortName">data_out_valid</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_ready" type="logic">
+      <obj_property name="ElementShortName">data_out_ready</obj_property>
+      <obj_property name="ObjectShortName">data_out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_last" type="logic">
+      <obj_property name="ElementShortName">data_out_last</obj_property>
+      <obj_property name="ObjectShortName">data_out_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_i" type="logic">
+      <obj_property name="ElementShortName">scl_i</obj_property>
+      <obj_property name="ObjectShortName">scl_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_o" type="logic">
+      <obj_property name="ElementShortName">scl_o</obj_property>
+      <obj_property name="ObjectShortName">scl_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_t" type="logic">
+      <obj_property name="ElementShortName">scl_t</obj_property>
+      <obj_property name="ObjectShortName">scl_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_i" type="logic">
+      <obj_property name="ElementShortName">sda_i</obj_property>
+      <obj_property name="ObjectShortName">sda_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_o" type="logic">
+      <obj_property name="ElementShortName">sda_o</obj_property>
+      <obj_property name="ObjectShortName">sda_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_t" type="logic">
+      <obj_property name="ElementShortName">sda_t</obj_property>
+      <obj_property name="ObjectShortName">sda_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bus_control" type="logic">
+      <obj_property name="ElementShortName">bus_control</obj_property>
+      <obj_property name="ObjectShortName">bus_control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bus_active" type="logic">
+      <obj_property name="ElementShortName">bus_active</obj_property>
+      <obj_property name="ObjectShortName">bus_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/missed_ack" type="logic">
+      <obj_property name="ElementShortName">missed_ack</obj_property>
+      <obj_property name="ObjectShortName">missed_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/prescale" type="array">
+      <obj_property name="ElementShortName">prescale[15:0]</obj_property>
+      <obj_property name="ObjectShortName">prescale[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/stop_on_idle" type="logic">
+      <obj_property name="ElementShortName">stop_on_idle</obj_property>
+      <obj_property name="ObjectShortName">stop_on_idle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/state_reg" type="array">
+      <obj_property name="ElementShortName">state_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/state_next" type="array">
+      <obj_property name="ElementShortName">state_next[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_state_reg" type="array">
+      <obj_property name="ElementShortName">phy_state_reg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_state_reg[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_state_next" type="array">
+      <obj_property name="ElementShortName">phy_state_next[4:0]</obj_property>
+      <obj_property name="ObjectShortName">phy_state_next[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_start_bit" type="logic">
+      <obj_property name="ElementShortName">phy_start_bit</obj_property>
+      <obj_property name="ObjectShortName">phy_start_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_stop_bit" type="logic">
+      <obj_property name="ElementShortName">phy_stop_bit</obj_property>
+      <obj_property name="ObjectShortName">phy_stop_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_write_bit" type="logic">
+      <obj_property name="ElementShortName">phy_write_bit</obj_property>
+      <obj_property name="ObjectShortName">phy_write_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_read_bit" type="logic">
+      <obj_property name="ElementShortName">phy_read_bit</obj_property>
+      <obj_property name="ObjectShortName">phy_read_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_release_bus" type="logic">
+      <obj_property name="ElementShortName">phy_release_bus</obj_property>
+      <obj_property name="ObjectShortName">phy_release_bus</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_tx_data" type="logic">
+      <obj_property name="ElementShortName">phy_tx_data</obj_property>
+      <obj_property name="ObjectShortName">phy_tx_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_rx_data_reg" type="logic">
+      <obj_property name="ElementShortName">phy_rx_data_reg</obj_property>
+      <obj_property name="ObjectShortName">phy_rx_data_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/phy_rx_data_next" type="logic">
+      <obj_property name="ElementShortName">phy_rx_data_next</obj_property>
+      <obj_property name="ObjectShortName">phy_rx_data_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/addr_reg" type="array">
+      <obj_property name="ElementShortName">addr_reg[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_reg[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/addr_next" type="array">
+      <obj_property name="ElementShortName">addr_next[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_next[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_reg" type="array">
+      <obj_property name="ElementShortName">data_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_next" type="array">
+      <obj_property name="ElementShortName">data_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/last_reg" type="logic">
+      <obj_property name="ElementShortName">last_reg</obj_property>
+      <obj_property name="ObjectShortName">last_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/last_next" type="logic">
+      <obj_property name="ElementShortName">last_next</obj_property>
+      <obj_property name="ObjectShortName">last_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/mode_read_reg" type="logic">
+      <obj_property name="ElementShortName">mode_read_reg</obj_property>
+      <obj_property name="ObjectShortName">mode_read_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/mode_read_next" type="logic">
+      <obj_property name="ElementShortName">mode_read_next</obj_property>
+      <obj_property name="ObjectShortName">mode_read_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/mode_write_multiple_reg" type="logic">
+      <obj_property name="ElementShortName">mode_write_multiple_reg</obj_property>
+      <obj_property name="ObjectShortName">mode_write_multiple_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/mode_write_multiple_next" type="logic">
+      <obj_property name="ElementShortName">mode_write_multiple_next</obj_property>
+      <obj_property name="ObjectShortName">mode_write_multiple_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/mode_stop_reg" type="logic">
+      <obj_property name="ElementShortName">mode_stop_reg</obj_property>
+      <obj_property name="ObjectShortName">mode_stop_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/mode_stop_next" type="logic">
+      <obj_property name="ElementShortName">mode_stop_next</obj_property>
+      <obj_property name="ObjectShortName">mode_stop_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/delay_reg" type="array">
+      <obj_property name="ElementShortName">delay_reg[16:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_reg[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/delay_next" type="array">
+      <obj_property name="ElementShortName">delay_next[16:0]</obj_property>
+      <obj_property name="ObjectShortName">delay_next[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/delay_scl_reg" type="logic">
+      <obj_property name="ElementShortName">delay_scl_reg</obj_property>
+      <obj_property name="ObjectShortName">delay_scl_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/delay_scl_next" type="logic">
+      <obj_property name="ElementShortName">delay_scl_next</obj_property>
+      <obj_property name="ObjectShortName">delay_scl_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/delay_sda_reg" type="logic">
+      <obj_property name="ElementShortName">delay_sda_reg</obj_property>
+      <obj_property name="ObjectShortName">delay_sda_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/delay_sda_next" type="logic">
+      <obj_property name="ElementShortName">delay_sda_next</obj_property>
+      <obj_property name="ObjectShortName">delay_sda_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bit_count_reg" type="array">
+      <obj_property name="ElementShortName">bit_count_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bit_count_next" type="array">
+      <obj_property name="ElementShortName">bit_count_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count_next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_ready_reg" type="logic">
+      <obj_property name="ElementShortName">cmd_ready_reg</obj_property>
+      <obj_property name="ObjectShortName">cmd_ready_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/cmd_ready_next" type="logic">
+      <obj_property name="ElementShortName">cmd_ready_next</obj_property>
+      <obj_property name="ObjectShortName">cmd_ready_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_in_ready_reg" type="logic">
+      <obj_property name="ElementShortName">data_in_ready_reg</obj_property>
+      <obj_property name="ObjectShortName">data_in_ready_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_in_ready_next" type="logic">
+      <obj_property name="ElementShortName">data_in_ready_next</obj_property>
+      <obj_property name="ObjectShortName">data_in_ready_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_reg" type="array">
+      <obj_property name="ElementShortName">data_out_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_next" type="array">
+      <obj_property name="ElementShortName">data_out_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_valid_reg" type="logic">
+      <obj_property name="ElementShortName">data_out_valid_reg</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_valid_next" type="logic">
+      <obj_property name="ElementShortName">data_out_valid_next</obj_property>
+      <obj_property name="ObjectShortName">data_out_valid_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_last_reg" type="logic">
+      <obj_property name="ElementShortName">data_out_last_reg</obj_property>
+      <obj_property name="ObjectShortName">data_out_last_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/data_out_last_next" type="logic">
+      <obj_property name="ElementShortName">data_out_last_next</obj_property>
+      <obj_property name="ObjectShortName">data_out_last_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_i_reg" type="logic">
+      <obj_property name="ElementShortName">scl_i_reg</obj_property>
+      <obj_property name="ObjectShortName">scl_i_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_i_reg" type="logic">
+      <obj_property name="ElementShortName">sda_i_reg</obj_property>
+      <obj_property name="ObjectShortName">sda_i_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_o_reg" type="logic">
+      <obj_property name="ElementShortName">scl_o_reg</obj_property>
+      <obj_property name="ObjectShortName">scl_o_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_o_next" type="logic">
+      <obj_property name="ElementShortName">scl_o_next</obj_property>
+      <obj_property name="ObjectShortName">scl_o_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_o_reg" type="logic">
+      <obj_property name="ElementShortName">sda_o_reg</obj_property>
+      <obj_property name="ObjectShortName">sda_o_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_o_next" type="logic">
+      <obj_property name="ElementShortName">sda_o_next</obj_property>
+      <obj_property name="ObjectShortName">sda_o_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/last_scl_i_reg" type="logic">
+      <obj_property name="ElementShortName">last_scl_i_reg</obj_property>
+      <obj_property name="ObjectShortName">last_scl_i_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/last_sda_i_reg" type="logic">
+      <obj_property name="ElementShortName">last_sda_i_reg</obj_property>
+      <obj_property name="ObjectShortName">last_sda_i_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/busy_reg" type="logic">
+      <obj_property name="ElementShortName">busy_reg</obj_property>
+      <obj_property name="ObjectShortName">busy_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bus_active_reg" type="logic">
+      <obj_property name="ElementShortName">bus_active_reg</obj_property>
+      <obj_property name="ObjectShortName">bus_active_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bus_control_reg" type="logic">
+      <obj_property name="ElementShortName">bus_control_reg</obj_property>
+      <obj_property name="ObjectShortName">bus_control_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/bus_control_next" type="logic">
+      <obj_property name="ElementShortName">bus_control_next</obj_property>
+      <obj_property name="ObjectShortName">bus_control_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/missed_ack_reg" type="logic">
+      <obj_property name="ElementShortName">missed_ack_reg</obj_property>
+      <obj_property name="ObjectShortName">missed_ack_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/missed_ack_next" type="logic">
+      <obj_property name="ElementShortName">missed_ack_next</obj_property>
+      <obj_property name="ObjectShortName">missed_ack_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_posedge" type="logic">
+      <obj_property name="ElementShortName">scl_posedge</obj_property>
+      <obj_property name="ObjectShortName">scl_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/scl_negedge" type="logic">
+      <obj_property name="ElementShortName">scl_negedge</obj_property>
+      <obj_property name="ObjectShortName">scl_negedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_posedge" type="logic">
+      <obj_property name="ElementShortName">sda_posedge</obj_property>
+      <obj_property name="ObjectShortName">sda_posedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/sda_negedge" type="logic">
+      <obj_property name="ElementShortName">sda_negedge</obj_property>
+      <obj_property name="ObjectShortName">sda_negedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/start_bit" type="logic">
+      <obj_property name="ElementShortName">start_bit</obj_property>
+      <obj_property name="ObjectShortName">start_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/stop_bit" type="logic">
+      <obj_property name="ElementShortName">stop_bit</obj_property>
+      <obj_property name="ObjectShortName">stop_bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_IDLE" type="array">
+      <obj_property name="ElementShortName">STATE_IDLE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_IDLE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_ACTIVE_WRITE" type="array">
+      <obj_property name="ElementShortName">STATE_ACTIVE_WRITE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_ACTIVE_WRITE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_ACTIVE_READ" type="array">
+      <obj_property name="ElementShortName">STATE_ACTIVE_READ[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_ACTIVE_READ[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_START_WAIT" type="array">
+      <obj_property name="ElementShortName">STATE_START_WAIT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_START_WAIT[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_START" type="array">
+      <obj_property name="ElementShortName">STATE_START[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_START[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_ADDRESS_1" type="array">
+      <obj_property name="ElementShortName">STATE_ADDRESS_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_ADDRESS_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_ADDRESS_2" type="array">
+      <obj_property name="ElementShortName">STATE_ADDRESS_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_ADDRESS_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_WRITE_1" type="array">
+      <obj_property name="ElementShortName">STATE_WRITE_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_WRITE_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_WRITE_2" type="array">
+      <obj_property name="ElementShortName">STATE_WRITE_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_WRITE_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_WRITE_3" type="array">
+      <obj_property name="ElementShortName">STATE_WRITE_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_WRITE_3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_READ" type="array">
+      <obj_property name="ElementShortName">STATE_READ[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_READ[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/STATE_STOP" type="array">
+      <obj_property name="ElementShortName">STATE_STOP[4:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE_STOP[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_IDLE" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_IDLE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_IDLE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_ACTIVE" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_ACTIVE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_ACTIVE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_REPEATED_START_1" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_REPEATED_START_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_REPEATED_START_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_REPEATED_START_2" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_REPEATED_START_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_REPEATED_START_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_START_1" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_START_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_START_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_START_2" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_START_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_START_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_WRITE_BIT_1" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_WRITE_BIT_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_WRITE_BIT_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_WRITE_BIT_2" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_WRITE_BIT_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_WRITE_BIT_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_WRITE_BIT_3" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_WRITE_BIT_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_WRITE_BIT_3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_READ_BIT_1" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_READ_BIT_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_READ_BIT_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_READ_BIT_2" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_READ_BIT_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_READ_BIT_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_READ_BIT_3" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_READ_BIT_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_READ_BIT_3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_READ_BIT_4" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_READ_BIT_4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_READ_BIT_4[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_STOP_1" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_STOP_1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_STOP_1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_STOP_2" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_STOP_2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_STOP_2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/dut/rtcc/rtcc_i2c/PHY_STATE_STOP_3" type="array">
+      <obj_property name="ElementShortName">PHY_STATE_STOP_3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PHY_STATE_STOP_3[4:0]</obj_property>
+   </wvobject>
+</wave_config>
