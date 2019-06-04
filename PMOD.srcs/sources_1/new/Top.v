@@ -33,11 +33,12 @@ module top(
     
     // PMOD Port A (JA1-JA12) (PMOD RTCC)
     
-    input JA2,   // Return input of MFI pin
-    inout JA3,   // SCL (1)
-    inout JA4,   // SDA (1)
-    inout JA9,   // SCL (2)
-    inout JA10,  // SDA (2)
+    output JA1,   // Missed ACK 
+    input  JA2,   // Return input of MFI pin
+    inout  JA3,   // SCL (1)
+    inout  JA4,   // SDA (1)
+    inout  JA9,   // SCL (2)
+    inout  JA10,  // SDA (2)
 
     // PMOD Port B (JB1-JB12) (PMOD BT2)
     input  JB1,  // RTS
@@ -248,7 +249,9 @@ module top(
         .SCL_1    (JA3),
         .SDA_1    (JA4),
         .SCL_2    (JA9),
-        .SDA_2    (JA10)
+        .SDA_2    (JA10),
+        
+        .missed_ack (JA1)
         );
 
 endmodule

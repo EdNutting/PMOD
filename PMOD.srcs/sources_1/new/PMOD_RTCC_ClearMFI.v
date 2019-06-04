@@ -144,7 +144,7 @@ reg [8:0] init_data [INIT_DATA_LEN-1:0];
 initial begin
     // single address
     init_data[0]  = {2'b01, RTCC_ADDR};  // start write to address
-    init_data[1]  = {1'b1, 8'h070};      // write address 0x0007
+    init_data[1]  = {1'b1, 8'h07};      // write address 0x0007
     init_data[2]  = {1'b1, 8'b00001000}; // write data 8'b10001000
     init_data[3]  = 9'd0;                // stop
 end
