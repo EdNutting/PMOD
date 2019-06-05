@@ -25,8 +25,7 @@ module PMOD_RTCC(
     input RST_N,
     
     input mfiState,
-    output setmfi_busy,
-    output clearmfi_busy,
+    output busy,
     
     inout SCL_1,
     inout SDA_1,
@@ -110,147 +109,102 @@ module PMOD_RTCC(
     assign SDA_1 = i2c_sda_t ? 1'bz : i2c_sda_o;
     assign SDA_2 = i2c_sda_t ? 1'bz : i2c_sda_o;
 
-    reg setmfi_start;
-    reg clearmfi_start;
     reg mfiState_prev;
     
+    reg [6:0] dev_addr;
+    reg [7:0] reg_addr;
+    reg [7:0] reg_data;
+
+    reg start;
+
     always @(posedge CLK) begin
         mfiState_prev <= mfiState;
     end
 
     always @(posedge CLK) begin
         if (!RST_N) begin
-            setmfi_start <= 0;
-            clearmfi_start <= 0;
+            start <= 0;
+            dev_addr <= 0;
+            reg_addr <= 0;
+            reg_data <= 0;
         end
         else begin
-            if (mfiState != mfiState_prev && !setmfi_busy && !clearmfi_busy) begin
+            if (mfiState != mfiState_prev && !busy) begin
+                start <= 1;
+                
                 if (mfiState) begin
-                    setmfi_start <= 1;
-                    clearmfi_start <= 0;
+                    dev_addr <= RTCC_ADDR;
+                    reg_addr <= 'h07;
+                    reg_data <= 'b10001000;
                 end
                 else begin
-                    setmfi_start <= 0;
-                    clearmfi_start <= 1;
+                    dev_addr <= RTCC_ADDR;
+                    reg_addr <= 'h07;
+                    reg_data <= 'b00001000;
                 end
             end
             else begin
-                setmfi_start <= 0;
-                clearmfi_start <= 0;
+                start <= 0;
             end
         end
     end
 
-    wire [6:0]  setmfi_cmd_address;
-    wire        setmfi_cmd_start;
-    wire        setmfi_cmd_read;
-    wire        setmfi_cmd_write;
-    wire        setmfi_cmd_write_multiple;
-    wire        setmfi_cmd_stop;
-    wire        setmfi_cmd_valid;
-    wire        setmfi_cmd_ready;
+    wire [6:0]  cmd_address;
+    wire        cmd_start;
+    wire        cmd_read;
+    wire        cmd_write;
+    wire        cmd_write_multiple;
+    wire        cmd_stop;
+    wire        cmd_valid;
+    wire        cmd_ready;
 
-    wire [7:0]  setmfi_data_out;
-    wire        setmfi_data_out_valid;
-    wire        setmfi_data_out_ready;
-    wire        setmfi_data_out_last;
+    wire [7:0]  data_out;
+    wire        data_out_valid;
+    wire        data_out_ready;
+    wire        data_out_last;
     
-    PMOD_RTCC_SetMFI mfi_set (
+    PMOD_RTCC_Op rtcc_op (
         .clk     (CLK),
         .rst     (!RST_N),
         
-        .cmd_address        (setmfi_cmd_address),
-        .cmd_start          (setmfi_cmd_start),
-        .cmd_read           (setmfi_cmd_read),
-        .cmd_write          (setmfi_cmd_write),
-        .cmd_write_multiple (setmfi_cmd_write_multiple),
-        .cmd_stop           (setmfi_cmd_stop),
-        .cmd_valid          (setmfi_cmd_valid),
-        .cmd_ready          (setmfi_cmd_ready),
+        .dev_addr           (dev_addr),
+        .reg_addr           (reg_addr),
+        .reg_data           (reg_data),
         
-        .data_out           (setmfi_data_out),
-        .data_out_valid     (setmfi_data_out_valid),
-        .data_out_ready     (setmfi_data_out_ready),
-        .data_out_last      (setmfi_data_out_last),
+        .cmd_address        (cmd_address),
+        .cmd_start          (cmd_start),
+        .cmd_read           (cmd_read),
+        .cmd_write          (cmd_write),
+        .cmd_write_multiple (cmd_write_multiple),
+        .cmd_stop           (cmd_stop),
+        .cmd_valid          (cmd_valid),
+        .cmd_ready          (cmd_ready),
+        
+        .data_out           (data_out),
+        .data_out_valid     (data_out_valid),
+        .data_out_ready     (data_out_ready),
+        .data_out_last      (data_out_last),
 
-        .busy               (setmfi_busy),
-        .start              (setmfi_start)
+        .busy               (busy),
+        .start              (start)
         );
 
-    wire [6:0]  clearmfi_cmd_address;
-    wire        clearmfi_cmd_start;
-    wire        clearmfi_cmd_read;
-    wire        clearmfi_cmd_write;
-    wire        clearmfi_cmd_write_multiple;
-    wire        clearmfi_cmd_stop;
-    wire        clearmfi_cmd_valid;
-    wire        clearmfi_cmd_ready;
+    assign i2c_cmd_address         = busy ? cmd_address        : 0;
+    assign i2c_cmd_start           = busy ? cmd_start          : 0;
+    assign i2c_cmd_read            = busy ? cmd_read           : 0;
+    assign i2c_cmd_write           = busy ? cmd_write          : 0;
+    assign i2c_cmd_write_multiple  = busy ? cmd_write_multiple : 0;
+    assign i2c_cmd_stop            = busy ? cmd_stop           : 0;
+    assign i2c_cmd_valid           = busy ? cmd_valid          : 0;
 
-    wire [7:0]  clearmfi_data_out;
-    wire        clearmfi_data_out_valid;
-    wire        clearmfi_data_out_ready;
-    wire        clearmfi_data_out_last;
-    
-    PMOD_RTCC_ClearMFI mfi_clear (
-        .clk     (CLK),
-        .rst     (!RST_N),
-        
-        .cmd_address        (clearmfi_cmd_address),
-        .cmd_start          (clearmfi_cmd_start),
-        .cmd_read           (clearmfi_cmd_read),
-        .cmd_write          (clearmfi_cmd_write),
-        .cmd_write_multiple (clearmfi_cmd_write_multiple),
-        .cmd_stop           (clearmfi_cmd_stop),
-        .cmd_valid          (clearmfi_cmd_valid),
-        .cmd_ready          (clearmfi_cmd_ready),
-        
-        .data_out           (clearmfi_data_out),
-        .data_out_valid     (clearmfi_data_out_valid),
-        .data_out_ready     (clearmfi_data_out_ready),
-        .data_out_last      (clearmfi_data_out_last),
+    assign cmd_ready               = i2c_cmd_ready;
 
-        .busy               (clearmfi_busy),
-        .start              (clearmfi_start)
-        );
-        
-    assign i2c_cmd_address         = setmfi_busy   ? setmfi_cmd_address   :
-                                     clearmfi_busy ? clearmfi_cmd_address :
-                                     0;
-    assign i2c_cmd_start           = setmfi_busy   ? setmfi_cmd_start   :
-                                     clearmfi_busy ? clearmfi_cmd_start :
-                                     0;
-    assign i2c_cmd_read            = setmfi_busy   ? setmfi_cmd_read   :
-                                     clearmfi_busy ? clearmfi_cmd_read :
-                                     0;
-    assign i2c_cmd_write           = setmfi_busy   ? setmfi_cmd_write   :
-                                     clearmfi_busy ? clearmfi_cmd_write :
-                                     0;
-    assign i2c_cmd_write_multiple  = setmfi_busy   ? setmfi_cmd_write_multiple   :
-                                     clearmfi_busy ? clearmfi_cmd_write_multiple :
-                                     0;
-    assign i2c_cmd_stop            = setmfi_busy   ? setmfi_cmd_stop   :
-                                     clearmfi_busy ? clearmfi_cmd_stop :
-                                     0;
-    assign i2c_cmd_valid           = setmfi_busy   ? setmfi_cmd_valid   :
-                                     clearmfi_busy ? clearmfi_cmd_valid :
-                                     0;
+    assign i2c_data_in             = busy ? data_out       : 0;
+    assign i2c_data_in_valid       = busy ? data_out_valid : 0;
 
-    assign setmfi_cmd_ready        = i2c_cmd_ready;
-    assign clearmfi_cmd_ready      = i2c_cmd_ready;
+    assign data_out_ready          = i2c_data_in_ready;
 
-    assign i2c_data_in             = setmfi_busy   ? setmfi_data_out   :
-                                     clearmfi_busy ? clearmfi_data_out :
-                                     0;
-    assign i2c_data_in_valid       = setmfi_busy   ? setmfi_data_out_valid   :
-                                     clearmfi_busy ? clearmfi_data_out_valid :
-                                     0;
-
-    assign setmfi_data_out_ready   = i2c_data_in_ready;
-    assign clearmfi_data_out_ready = i2c_data_in_ready;
-
-    assign i2c_data_in_last        = setmfi_busy   ? setmfi_data_out_last   :
-                                     clearmfi_busy ? clearmfi_data_out_last :
-                                     0;
+    assign i2c_data_in_last        = busy ? data_out_last : 0;
                                      
     assign missed_ack = i2c_missed_ack;
 

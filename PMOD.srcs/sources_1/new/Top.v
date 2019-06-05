@@ -221,8 +221,7 @@ module top(
     // PMOD RTCC - PMOD Real-time Clock/Calendar
     
     reg rtcc_mfiState;
-    wire triggerMFIToggle =  (BT2_receive && (BT2_receive != BT2_receive_prev) && BT2_char_out == "T")
-                          || (BTNU_pressed && !BTNU_pressed_prev);
+    wire triggerMFIToggle = BT2_receive && (BT2_receive != BT2_receive_prev) && BT2_char_out == "T";
     
     assign LD6 = rtcc_mfiState;
     assign LD7 = JA2;
@@ -243,8 +242,7 @@ module top(
         .RST_N  (RST_N),
         
         .mfiState (rtcc_mfiState),
-        .setmfi_busy (LD4),
-        .clearmfi_busy (LD5),
+        .busy (LD5),
         
         .SCL_1    (JA3),
         .SDA_1    (JA4),

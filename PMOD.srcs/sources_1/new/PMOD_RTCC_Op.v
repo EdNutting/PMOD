@@ -29,9 +29,13 @@ THE SOFTWARE.
 /*
  * I2C init
  */
-module PMOD_RTCC_SetMFI (
+module PMOD_RTCC_Op (
     input  wire        clk,
     input  wire        rst,
+
+    input wire [6:0]   dev_addr,
+    input wire [7:0]   reg_addr,
+    input wire [7:0]   reg_data,
 
     /*
      * I2C master interface
@@ -133,21 +137,8 @@ write 0x11223344 to register 0x0004 on devices at 0x50, 0x51, 0x52, and 0x53
 
 */
 
-localparam [6:0] EEPROM_ADDR = 'b1010111;
-localparam [6:0] RTCC_ADDR   = 'b1101111;
-
 // init_data ROM
 localparam INIT_DATA_LEN = 4;
-
-reg [8:0] init_data [INIT_DATA_LEN-1:0];
-
-initial begin
-    // single address
-    init_data[0]  = {2'b01, RTCC_ADDR};  // start write to address
-    init_data[1]  = {1'b1, 8'h07};       // write address 0x07
-    init_data[2]  = {1'b1, 8'b10001000}; // write data 8'b10001000
-    init_data[3]  = 9'd0;                // stop
-end
 
 localparam [3:0]
     STATE_IDLE = 3'd0,
@@ -436,8 +427,13 @@ always @(posedge clk) begin
     end else begin
         state_reg <= state_next;
 
-        // read init_data ROM
-        init_data_reg <= init_data[address_next];
+        // Setup operation
+        case (address_next)
+            0: init_data_reg <= {2'b01, dev_addr};
+            1: init_data_reg <= {1'b1 , reg_addr};
+            2: init_data_reg <= {1'b1 , reg_data};
+            3: init_data_reg <= 9'b0;
+        endcase
 
         address_reg <= address_next;
         address_ptr_reg <= address_ptr_next;
