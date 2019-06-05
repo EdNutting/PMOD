@@ -31,7 +31,7 @@ module  DeBounce
 	output reg 	DB_out										// output
 	);
 //// ---------------- internal constants --------------
-	parameter N = 23 ;
+	parameter N = 29;
 ////---------------- internal variables ---------------
 	reg  [N-1 : 0]	q_reg;							// timing regs
 	reg  [N-1 : 0]	q_next;

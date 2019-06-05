@@ -98,6 +98,7 @@ set_property PACKAGE_PIN AB9  [get_ports {JA9}];  # "JA9"
 
 # For PMOD RTCC
 
+set_property PULLUP TRUE [get_ports {JA2}];
 set_property PULLUP TRUE [get_ports {JA3}];
 set_property PULLUP TRUE [get_ports {JA4}];
 set_property PULLUP TRUE [get_ports {JA9}];
