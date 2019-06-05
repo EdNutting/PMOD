@@ -36,7 +36,7 @@ module PMOD_RTCC(
     );
     
     parameter CLK_FREQ = 100000000; // 100MHz
-    parameter I2C_CLK_FREQ = 200000; // Spec max: 400kHz
+    parameter I2C_CLK_FREQ = 400000; // Spec max: 400kHz
     
     localparam [6:0] EEPROM_ADDR = 'b1010111;
     localparam [6:0] RTCC_ADDR   = 'b1101111;
